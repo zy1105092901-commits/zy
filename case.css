@@ -1,0 +1,50 @@
+.case-hero{min-height:650px;height:85vh;max-height:850px;position:relative;overflow:hidden;padding:150px 8vw 35px;background:radial-gradient(ellipse at 78% 50%,#33291d,#121416 50%,#0b0c0e)}
+.case-hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:70px 70px;opacity:.28}
+.case-hero-copy{position:relative;z-index:2;max-width:600px;margin-top:50px}
+.back-link{display:inline-block;font-size:10px;color:#aaa;margin-bottom:48px}
+.case-count{font:12px "DM Mono",monospace;color:var(--gold);margin-top:42px}
+.case-count span{color:#777}
+.case-hero h1{font-size:clamp(54px,8vw,104px);font-weight:400;letter-spacing:-.07em;margin:20px 0 8px}
+.case-hero-copy>p:not(.micro-label){font-family:"Noto Sans SC",sans-serif;font-size:16px;color:#c1b9ac}
+.case-tags{display:flex;gap:9px;margin-top:28px;flex-wrap:wrap}
+.case-tags span{border:1px solid rgba(255,255,255,.18);padding:8px 12px;color:#aaa;font:9px "DM Mono",monospace}
+.case-hero-art{position:absolute;right:6%;top:16%;width:49%;height:70%;display:flex;align-items:center;justify-content:center}
+.case-hero-art img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 22px 35px rgba(0,0,0,.5));animation:horseFloat 7s ease-in-out infinite}
+.case-hero-foot{position:absolute;bottom:30px;left:8%;right:8%;display:flex;justify-content:space-between;color:#777;font:8px "DM Mono",monospace;letter-spacing:.14em}
+.case-intro,.case-visual-section,.space-section{max-width:1280px;margin:auto;padding:110px 5vw}
+.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:10vw;padding:65px 0 55px}
+.intro-grid h2,.visual-head h2,.space-copy h2,.case-outro h2{font-size:clamp(42px,6vw,76px);line-height:1.2;letter-spacing:-.06em;font-weight:400;margin:0}
+.intro-grid h2 em,.visual-head h2 em,.case-outro h2 em{font-style:normal;color:var(--gold2)}
+.intro-grid>div{padding-top:10px;max-width:470px}
+.intro-grid p{font-family:"Noto Sans SC",sans-serif;font-size:14px;line-height:2.1;color:#b1b0aa}
+.intro-grid .source-note{font-size:10px;color:#777;margin-top:28px}
+.before-after{height:min(620px,60vw);min-height:360px;position:relative;overflow:hidden;background:#17191b;border:1px solid var(--line)}
+.ba-image{position:absolute;inset:0;background-size:cover;background-position:center}
+.before-layer{filter:saturate(.45) brightness(.72)}
+.after-layer{clip-path:inset(0 50% 0 0);background-position:center}
+.ba-label{position:absolute;top:25px;z-index:3;font:10px "DM Mono",monospace;letter-spacing:.15em;display:flex;flex-direction:column;gap:7px}
+.ba-label b{font:12px "Noto Sans SC",sans-serif;letter-spacing:.04em}
+.ba-before{left:28px;color:#ddd}.ba-after{right:28px;text-align:right;color:#f0d8b3}
+.ba-divider{position:absolute;top:0;bottom:0;left:50%;width:1px;background:#e9d2ae;pointer-events:none}
+.ba-divider:after{content:"↔";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:42px;height:42px;border-radius:50%;background:#e2c49a;color:#171819;display:grid;place-items:center;font-size:18px}
+.ba-control{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);z-index:5;background:rgba(9,10,11,.78);backdrop-filter:blur(10px);padding:12px 18px;display:flex;align-items:center;gap:16px;font:9px "Noto Sans SC",sans-serif;color:#ddd;white-space:nowrap}
+.ba-control input{width:160px;accent-color:#c9a779}
+.visual-head{display:flex;justify-content:space-between;align-items:flex-end;padding:60px 0 42px;gap:35px}
+.visual-head p{font:12px/2 "Noto Sans SC",sans-serif;color:#999;max-width:260px}
+.visual-showcase{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.visual-tile{min-height:300px;background:#17191b;overflow:hidden;border:1px solid var(--line);position:relative}
+.visual-tile img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s}
+.visual-tile:hover img{transform:scale(1.04)}
+.visual-tile.wide{grid-column:span 2;min-height:400px}
+.visual-tile span{position:absolute;bottom:18px;left:20px;font:9px "DM Mono",monospace;letter-spacing:.15em;color:#e6d5b8;text-shadow:0 1px 8px #000}
+.space-section{border-top:1px solid var(--line)}
+.space-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:8vw;padding-top:65px}
+.space-copy h2{font-size:clamp(40px,5vw,62px);margin:24px 0}
+.space-copy>p:not(.micro-label){font:13px/2 "Noto Sans SC",sans-serif;color:#999;max-width:350px}
+.space-index{display:flex;gap:26px;margin-top:60px;font:10px "DM Mono",monospace;color:var(--gold)}
+.space-gallery{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.space-gallery .visual-tile{min-height:190px}
+.space-gallery .visual-tile:first-child{grid-column:span 2;min-height:310px}
+.case-outro{text-align:center;padding:115px 24px 130px;background:radial-gradient(ellipse at center,#33271a,#111315 65%)}
+.case-outro h2{margin:25px 0 32px}
+@media(max-width:700px){.case-hero{height:780px;min-height:0;padding:120px 24px 30px}.case-hero-copy{margin-top:20px}.back-link{margin-bottom:30px}.case-count{margin-top:28px}.case-hero h1{font-size:58px}.case-hero-copy>p:not(.micro-label){font-size:13px}.case-hero-art{width:115%;height:390px;right:-20%;top:390px;opacity:.78}.case-hero-foot{left:24px;right:24px;font-size:7px}.case-intro,.case-visual-section,.space-section{padding:78px 24px}.intro-grid{grid-template-columns:1fr;gap:20px;padding:45px 0 34px}.intro-grid h2,.visual-head h2{font-size:46px}.intro-grid p{font-size:12px}.before-after{height:420px;min-height:0}.ba-control{bottom:12px;padding:9px 11px;gap:8px;font-size:8px}.ba-control input{width:105px}.ba-label{top:14px;font-size:8px}.ba-before{left:14px}.ba-after{right:14px}.visual-head{display:block;padding:45px 0 25px}.visual-head p{margin-top:18px}.visual-showcase{gap:10px}.visual-tile{min-height:170px}.visual-tile.wide{min-height:220px}.space-layout{grid-template-columns:1fr;gap:35px;padding-top:45px}.space-copy h2{font-size:44px}.space-index{margin-top:30px}.space-gallery .visual-tile{min-height:130px}.space-gallery .visual-tile:first-child{min-height:220px}.case-outro{padding:80px 24px 90px}.case-outro h2{font-size:46px}}
